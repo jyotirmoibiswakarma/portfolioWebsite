@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: grey;
+    font-family: 'Oswald';
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 20px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 20px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    /* background-color: aqua; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    /* background-color: rgb(215, 48, 182); */
+    height: 78vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    margin: 0 120px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro';
+}
+
+.hello {
+    font-size: 55px;
+}
+
+.name {
+    font-size: 50px;
+    font-family: 'Oswald';
+}
+
+.about {
+    font-size: 25px;
+    font-family: 'Playfair Display';
+}
+
+.moreAbout {
+    font-size: 15px;
+    font-family: 'oswald';
+    margin-top: 23px;
+}
+
+.buttons {
+    margin-top: 34px;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 3px;
+    border-color: azure;
+}
+
+.btn-sm {
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0;
+}
+
+
+.btn:hover {
+    color: dodgerblue;
+    background-color: white;
+
+}
+
+.devPic {
+    height: 78vh;
+}
+
+/* Contact Page */
+.contactform {
+    /* text-align: center; */
+    margin:0 120px ;
+    padding: 34px;
+    padding-top: 144px;
+    font-family: "Oswald";
+
+}
+
+.contactform h1 {
+    font-family: 'Source code pro';
+    padding: 12px 0;
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 10px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px;
+}
+
+.blogitem {
+    margin: 20px;
+    font-family: 'oswald';
+
+}
+
+.blogContainer{
+    margin: 0 120px;
+}
+
+.blogContainer h1 {
+    font-family: 'source code pro';
+    font-weight: bolder;
+    padding: 20px;
+
+}
+
+.blogitem p {}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+
+}
+
+.cross {
+    
+    margin-left: 90px;
+}
+
+@media (max-width: 900px) {
+    .devPic{
+        display: none;
+    }
+    .intro,.blogContainer,.contactform,.devInfo{
+        margin: 50px 8px;
+    }
+    /* * {
+        background-color: rgb(234, 138, 138);
+    }
+    .sidebar {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+}
